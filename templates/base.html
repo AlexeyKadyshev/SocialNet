@@ -1,0 +1,40 @@
+{% load static %}
+{% load django_bootstrap5 %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {{ title }}</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'main_topic/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'main_topic/css/styles.css' %}" type="text/css">
+    <script src="{% static 'main_topic/js/bootstrap.min.js' %}"></script>
+</head>
+
+<body>
+{% block content %} {% endblock %}
+<header>
+
+</header>
+<div class="my_menu">
+    <ul class="menu_list">
+        {% for item in menu %}
+        <li><h2><img
+                src="{% static item.icon %}" width="30"><a class="menu_href" href="{% url item.url_name %}"> {{ item.title }}</a>
+        </h2></li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="to_main">
+    <a href="{% url 'home' %}" class="main_href">На главную страницу</a>
+</div>
+<footer>
+    <div class="approve">
+        <p>&copy; Все права защищены! &lt;Это МОЯ социальная сеть!!!&gt;</p>
+    </div>
+</footer>
+</body>
+
+</html>

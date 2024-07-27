@@ -1,0 +1,99 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+background-image: url('../images/fon2.png');
+background-attachment: fixed;
+background-size: 100% 100%;
+background-position: center center;
+}
+
+
+@font-face {
+font-family: 'Comfortaa';
+src: local('Comfortaa'), url('../fonts/comfortaa.ttf');
+}
+
+@font-face {
+font-family: 'Roboto';
+src: local('Roboto'), url('../fonts/Roboto.ttf');
+}
+
+@font-face {
+font-family: 'Andika';
+src: local('Andika'), url('../fonts/Andika.ttf');
+}
+
+@font-face {
+font-family: 'Anonymous';
+src: local('Anonymous'), url('../fonts/Anonymous.ttf');
+}
+
+@font-face {
+font-family: 'Jura';
+src: local('Jura'), url('../fonts/Jura.ttf');
+}
+
+@font-face {
+font-family: 'DAG';
+src: local('DAG'), url('../fonts/DAG.otf');
+}
+
+@font-face {
+font-family: 'Neucha';
+src: local('Neucha'), url('../fonts/Neucha.ttf');
+}
+
+@font-face {
+font-family: 'KellySlab';
+src: local('KellySlab'), url('../fonts/KellySlab.ttf');
+}
+
+.form {
+font-family: 'Jura';
+color: #F5DEB3;
+}
+
+.menu_list li {
+margin: 10px 30px 50px 0;
+list-style: none;
+}
+
+.user_login, .user_register {
+margin: 100px 60px 50px 30px;
+list-style: none;
+}
+
+.menu_href, .user_login, .user_register {
+text-decoration: none;
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 25px;
+color: #F5DEB3;
+}
+
+.page_name, .login_page {
+margin: 20px 20px 60px 30px;
+font-family: 'Jura';
+font-size: 50px;
+font-weight: 800;
+color: #F5DEB3;
+}
+
+.to_main {
+margin: 100px 50px 100px 30px;
+}
+
+.main_href, .enter {
+font-family: 'Roboto';
+color: #F5DEB3;
+text-decoration: none;
+}
+
+.approve {
+font-family: 'Jura';
+text-align: center;
+color: #F5DEB3;
+}
